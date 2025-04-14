@@ -9,10 +9,8 @@ Este projeto tem como objetivo desenvolver uma solução completa para gerenciam
 - **Backend**
   - Python 3.12+
   - FastAPI
-  - PostgreSQL
-  - Docker (em breve)
-  - Kubernetes (exploratório)
-
+  - SQLite
+  
 - **Frontend**
   - Node.js
   - Vue.js 3
@@ -31,10 +29,9 @@ Este projeto tem como objetivo desenvolver uma solução completa para gerenciam
 
 api_imobiliaria/
 │
-├── backend-node/    
-├── backend-python/    # API em FastAPI ou Node.js
-├── frontend-vue/        # Interface web em Vue.js 3
-├── docs/            # Arquivos de documentação técnica
+├── backend-python/
+├── frontend-html/
+├── docs/
 ├── .gitignore
 └── README.md
 
@@ -44,8 +41,8 @@ api_imobiliaria/
 ## 📌 Funcionalidades planejadas
 
 - [x] Estrutura inicial do projeto
-- [ ] Cadastro de imóveis
-- [ ] Consulta por filtros (CEP, bairro, tipo)
+- [x] Cadastro de imóveis
+- [x] Consulta por filtros (CEP, bairro, tipo)
 - [ ] Autenticação de usuários
 - [ ] Upload de imagens dos imóveis
 - [ ] Dashboard administrativo
