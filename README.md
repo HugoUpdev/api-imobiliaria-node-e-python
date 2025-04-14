@@ -31,8 +31,9 @@ Este projeto tem como objetivo desenvolver uma solução completa para gerenciam
 
 api_imobiliaria/
 │
-├── backend/         # API em FastAPI ou Node.js
-├── frontend/        # Interface web em Vue.js 3
+├── backend-node/    
+├── backend-python/    # API em FastAPI ou Node.js
+├── frontend-vue/        # Interface web em Vue.js 3
 ├── docs/            # Arquivos de documentação técnica
 ├── .gitignore
 └── README.md
