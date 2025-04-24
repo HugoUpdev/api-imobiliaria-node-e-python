@@ -1,0 +1,74 @@
+Dias 1 a 2 – Definição de Arquitetura de Software
+
+    Objetivo: Entender os conceitos de arquitetura em camadas, REST, MVC e Clean Architecture.
+    Projeto: Documentação de uma arquitetura simples de sistema (exemplo: loja, CRM).
+
+    Requisitos:
+    Definir as camadas do sistema (exemplo: apresentação, negócio e dados).
+    Criar diagramas para ilustrar como as camadas interagem (pode usar Excalidraw ou draw.io).
+    Explicar como as APIs serão estruturadas.
+    
+    Formato: Repositório com:
+    README.md com explicações sobre a arquitetura.
+    Diagrama representando a arquitetura.
+    Explicações das camadas (exemplo: camada de controller, camada de serviço, camada de repositório).
+    Resultado Esperado: Ter uma visão clara de como dividir um sistema em camadas e como elas interagem. A documentação ajudará a visualizar como construir sistemas de forma escalável.
+
+Dias 3 a 4 – Criação de APIs REST
+    Tecnologias: Node.js + Express.
+    Projeto: API para gerenciamento de tarefas (To-Do List com CRUD).
+    Requisitos:
+    Rotas para criar, listar, atualizar e excluir tarefas.
+    Middleware para validação de dados.
+    Tratamento de erros (com mensagens e status codes apropriados).
+    Versionamento de API.
+    Extras:
+    Utilização de status codes HTTP adequados (200, 201, 400, 404, etc.).
+    Adicionar um middleware de autenticação ou validação.
+    Repositório:
+    Código completo no GitHub.
+    Collection do Postman para testar os endpoints da API.
+    Resultado Esperado: Aprender como estruturar uma API simples com rotas CRUD, utilizar middleware e tratar erros de forma eficaz.
+
+Dias 5 a 6 – Backend com Python
+    Tecnologias: Python + Flask ou FastAPI.
+    Projeto: API para consulta de CEP com cache.
+    Requisitos:
+    Criar uma API que consulte um CEP e retorne as informações de endereço.
+    Implementar cache para armazenar as respostas das consultas, melhorando a performance.
+    Documentação automática com Swagger.
+    Objetivo:
+    Aprender a criar rotas, configurar métodos de requisição (GET, POST), e utilizar cache.
+    Integrar o Swagger para auto-documentação da API.
+    Resultado Esperado: Obter familiaridade com a criação de APIs em Python, aprender sobre cache para otimização e melhorar a experiência do usuário com documentação automática.
+
+Dias 7 a 8 – Node.js com Vue 3
+    Projeto Full Stack: Catálogo de produtos.
+    Backend: Node.js + Express
+    Requisitos:
+    Criar uma API REST para categorias e produtos.
+    Implementar filtros e busca por categoria.
+    Frontend: Vue 3 + Composition API
+    Requisitos:
+    Criar uma interface para listar e buscar produtos.
+    Implementar a busca e filtros interativos no frontend.
+    Banco de dados: MongoDB ou SQLite.
+    Usar MongoDB para projetos mais dinâmicos ou SQLite para algo mais simples.
+    Objetivo:
+    Integrar o frontend com o backend, trabalhando com APIs REST e utilizando Vue 3 para uma interface dinâmica.
+    Resultado Esperado:
+    Criar um aplicativo full-stack básico, com frontend interativo e backend funcional.
+
+Dias 9 a 10 – Kubernetes (Básico)
+    Objetivo: Entender containers, pods, deployments, e services.
+    Projeto: Containerizar a API em Node.js e criar arquivos de manifesto do Kubernetes (YAML).
+    Requisitos:
+    Criar um Dockerfile para a API em Node.js.
+    Containerizar a aplicação com Docker.
+    Criar arquivos de manifesto Kubernetes (YAML) para deployment e service.
+    Extras:
+    Subir local com Minikube ou Versionar os arquivos como documentação no GitHub.
+    Resultado Esperado: Entender os conceitos de Docker e Kubernetes, aprender a containerizar uma aplicação e configurar deployments básicos no Kubernetes.
+
+
+

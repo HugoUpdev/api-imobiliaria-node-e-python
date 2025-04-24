@@ -1,0 +1,59 @@
+
+ Projeto: Imobiliária - Cadastro e Catálogo de Imóveis
+
+🔧 Tecnologias Sugeridas
+Frontend: Vue.js 3 + Fetch/Axios
+
+Backend (API Interna): Node.js com Express ou Python com FastAPI
+
+API Externa: ViaCEP (https://viacep.com.br/ws/CEP/json)
+
+Banco de dados: SQLite (pra simplicidade), ou PostgreSQL
+
+Possível extra: Docker/Kubernetes (containerizar a API no final)
+
+🔍 Funcionalidades
+📥 Cadastro de Imóveis (painel/admin)
+Formulário com:
+
+Título
+
+Tipo do imóvel (casa, apartamento, terreno…)
+
+Descrição
+
+Valor
+
+CEP → consulta endereço pela API externa
+
+Endereço completo (auto preenchido)
+
+Imagens (podemos simular o upload, ou deixar como URL)
+
+Botão "Salvar" → envia para API interna
+
+📃 Catálogo de Imóveis (site público)
+Página que consome a API interna e lista os imóveis
+
+Filtros:
+
+Tipo do imóvel
+
+Faixa de preço
+
+Cidade
+
+Card de imóvel com imagem, endereço, preço, botão "Detalhes"
+
+📡 API Interna (Node ou Python)
+Rotas REST:
+
+GET /imoveis (com filtros)
+
+GET /imoveis/:id
+
+POST /imoveis
+
+PUT /imoveis/:id
+
+DELETE /imoveis/:id

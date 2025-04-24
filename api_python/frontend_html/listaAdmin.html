@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Imóvies Cadastrados{% endblock %}
+
+{% block content %}
+        <h1 class="mb-4">Imóveis Cadastrados</h1>
+
+        <table class="table table-bordered table-hover bg-white">
+            <thead class="table-secondary">
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Endereço</th>
+                    <th>Preço</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for imovel in imoveis %}
+                <tr>
+                    <td>{{ imovel.id }}</td>
+                    <td>{{ imovel.titulo }}</td>
+                    <td>{{ imovel.endereco }}</td>
+                    <td>
+                        {% if imovel.preco is not none %}
+                            {{ imovel.preco }}
+                        {% else %}
+                            Não informado
+                        {% endif %}
+                    </td>
+                    <td class="d-flex gap-2">
+                        <a href="/editar/{{ imovel.id }}" class="btn btn-sm btn-primary">Editar</a>
+                        <form action="/excluir/{{ imovel.id }}" method="post" onsubmit="return confirm('Tem certeza que deseja excluir este imóvel?');">
+                            <button type="submit" class="btn btn-sm btn-danger">Excluir</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <a href="/novo" class="btn btn-success mt-3">Incluir Novo Imóvel</a>
+
+{% endblock %}

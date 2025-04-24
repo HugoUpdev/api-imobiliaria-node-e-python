@@ -1,0 +1,10 @@
+services:
+  backend:
+    build: ./backend_python
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../shared/database:/app/database
+      - ./frontend_html:/app/frontend_html  # adiciona essa linha
+    environment:
+      - DB_PATH=/app/database/imoveis.db

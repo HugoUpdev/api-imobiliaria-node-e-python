@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend-node
+    ports:
+      - "3000:3000"    # Porta do backend Node.js (diferente do Python 8000)
+    volumes:
+      - ../shared/database:/app/database
+    environment:
+      - DB_PATH=/app/database/imoveis.db
+
+  frontend:
+    build:
+      context: ./frontend-vue
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8080"    # Porta padrão do Vite dev server para Vue
+    command: ["npm", "run", "serve"]

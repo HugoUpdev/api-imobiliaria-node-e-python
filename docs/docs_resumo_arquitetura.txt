@@ -1,0 +1,59 @@
+
+# Resumo de Arquitetura de Software
+
+## O que é Arquitetura de Software?
+É o modelo de alto nível que define como os componentes de um sistema se organizam, se comunicam e são mantidos ao longo do tempo.
+
+---
+
+## Tipos de Arquitetura
+
+### Monolítica
+- Toda a aplicação está num único projeto.
+- Simples no início, difícil de escalar.
+- Ex: sistema PHP sem separações.
+
+### Microsserviços
+- Aplicação dividida em pequenos serviços independentes.
+- Mais complexa, mas escalável.
+- Ex: serviço de autenticação separado do serviço de imóveis.
+
+### Serverless
+- Não há gerenciamento de servidores.
+- Funções pequenas e escaláveis (ex: AWS Lambda).
+
+---
+
+## Padrões de Arquitetura
+
+### MVC (Model-View-Controller)
+- **Model**: dados e regras de negócio.
+- **View**: interface com o usuário.
+- **Controller**: lógica de entrada/processamento.
+
+### Arquitetura em Camadas
+Separação por responsabilidades:
+
+1. **Apresentação**: interface (ex: Vue.js).
+2. **Aplicação**: lógica de orquestração (Controllers).
+3. **Domínio**: lógica de negócio (Modelos).
+4. **Infraestrutura**: banco de dados, APIs externas.
+
+### Clean Architecture
+- Separação completa entre camadas.
+- O núcleo do sistema não depende de frameworks ou tecnologias externas.
+
+---
+
+## REST (Representational State Transfer)
+Estilo arquitetural para criação de APIs.
+
+- Baseado em métodos HTTP:
+  - `GET`, `POST`, `PUT`, `DELETE`
+- URLs organizadas: `/imoveis`, `/imoveis/:id`
+- Stateless: requisições independentes
+- Respostas em JSON
+
+---
+
+Este documento faz parte da pasta `docs/` do projeto `api_imobiliaria`.

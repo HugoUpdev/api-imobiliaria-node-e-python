@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Página Inicial{% endblock %}
+
+{% block content %}
+<h1>Imóveis disponíveis</h1>
+<div class="row">
+    {% for imovel in imoveis %}
+    <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+            <img src="https://picsum.photos/400/200" class="card-img-top" alt="Imagem do imóvel">
+            <div class="card-body">
+                <h5 class="card-title">{{ imovel.titulo }}</h5>
+                <p class="card-text"><strong>{{ imovel.tipo }}</strong><br>{{ imovel.preco }}</p>
+                <a href="/detalhe/{{ imovel.id }}" class="btn btn-outline-primary">Ver detalhes</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

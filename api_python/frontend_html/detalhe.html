@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Imobiliária Updev | Imóvel: {{ imovel.titulo }}{% endblock %}
+
+{% block content %}
+<h1>{{ imovel.titulo }}</h1>
+<div class="row">
+    <div class="col-md-6">
+        <img src="https://picsum.photos/600/400" class="img-fluid rounded shadow" alt="Imagem do imóvel">
+    </div>
+    <div class="col-md-6">
+        <p><strong>Descrição:</strong> {{ imovel.descricao }}</p>
+        <p><strong>Tipo:</strong> {{ imovel.tipo }}</p>
+        <p><strong>Preço:</strong> {{ imovel.preco }}</p>
+        <p><strong>Endereço:</strong> {{ imovel.endereco }}, {{ imovel.numero }}</p>
+        <p><strong>Bairro:</strong> {{ imovel.bairro }}</p>
+        <p><strong>Cidade/UF:</strong> {{ imovel.cidade }} / {{ imovel.uf }}</p>
+        <p><strong>CEP:</strong> {{ imovel.cep }}</p>
+        <a href="/home" class="btn btn-secondary mt-3">Voltar</a>
+    </div>
+</div>
+{% endblock %}
