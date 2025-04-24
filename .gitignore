@@ -1,3 +1,6 @@
+# Ignorar a pasta de banco de dados
+/shared/database/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
